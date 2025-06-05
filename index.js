@@ -41,7 +41,7 @@ app.post("/rule/run_action", (req, res) => {
 });
 
 // Docs: https://developers.asana.com/docs/get-action-metadata
-app.get("/rule/metadata", (req, res) => {
+app.options("/rule/metadata", (req, res) => {
   console.log("Rule metadata requested!");
   res.json(responses.rule_metadata_response);
 });
